@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 04, 2024 at 05:00 PM
+-- Generation Time: Sep 05, 2024 at 03:02 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -464,8 +464,8 @@ CREATE TABLE `users` (
   `id_user` int(6) NOT NULL,
   `nama_user` varchar(125) NOT NULL,
   `username` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL,
-  `jabatan` varchar(30) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `jabatan` varchar(50) NOT NULL,
   `ruangan` varchar(45) NOT NULL,
   `role` enum('1','2','3','4') DEFAULT NULL,
   `foto` varchar(128) DEFAULT NULL
@@ -476,10 +476,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `nama_user`, `username`, `password`, `jabatan`, `ruangan`, `role`, `foto`) VALUES
-(18, 'Ahsan', 'ahsan', '3d68b18bd9042ad3dc79643bde1ff3', 'Manajer Pembelian', '', '2', NULL),
-(19, 'Zafar', 'Zafar', '1b0527a886daeda9d30e54a1beb18e', 'Staf Pembelian', '', '2', NULL),
-(20, 'Amar (Admin)', 'Amar123', 'd01b8c6ea1a64ba2510df7cee1e4d6', 'Admin Gudang', '', '1', '63c3aa0a66fbecf73e640ab88afb15c3.png'),
-(21, 'Tanto', 'Tanto', '839bf59995cd3c79fd9d4b499ecae9', 'Direktur', '', '3', NULL);
+(18, 'Ahsan', 'ahsan123', '3d68b18bd9042ad3dc79643bde1ff351', 'Manajer Pembelian', '', '2', NULL),
+(19, 'Zafar', 'zafar123', '3b8eb8d23ad703b5575ae585d39caf9f', 'Staf Pembelian', '', '2', NULL),
+(20, 'Amar (Admin)', 'amar123', 'd01b8c6ea1a64ba2510df7cee1e4d604', 'Admin Gudang', '', '1', '63c3aa0a66fbecf73e640ab88afb15c3.png'),
+(21, 'Tanto', 'tanto123', 'fa6c90ead4d4870321f99eed967c01dc', 'Direktur', '', '3', NULL);
 
 --
 -- Indexes for dumped tables
