@@ -45,6 +45,21 @@
         </div>
       </div>
       <div class="card-body">
+      <!--alert
+      //<?php
+          $ambildatastok = mysqli_query($conn, "select * from barang where sisa < 1");
+
+          while($fetch=mysqli_fetch_array($ambildatastok)){
+            $sisabarang = $fetch['nama_barang'];
+          
+      ?>
+      <div class="alert alert-danger">
+          <strong>Perhatian!</strong> Stok <?=$sisabarang;?> telah habis!
+      </div>
+      <?php
+          }
+      ?>-->
+
         <div class="table-responsive">
           <table id="example1" class="table table-bordered table-striped">
             <thead>
